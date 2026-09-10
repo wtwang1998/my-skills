@@ -1,0 +1,4 @@
+interface:
+  display_name: "Safe PR Branch Workflow"
+  short_description: "Create a clean task branch and PR-ready commit"
+  default_prompt: "Use $safe-pr-branch-workflow to implement this change on a clean codex/ task branch, validate it, and prepare a Conventional Commit."

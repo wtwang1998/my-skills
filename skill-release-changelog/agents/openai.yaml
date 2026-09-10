@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Changelog"
+  short_description: "Generate Chinese GitHub Release changelogs"
+  default_prompt: "Use $skill-release-changelog to generate a Chinese Markdown changelog directly suitable for a GitHub Release from the requested Git range."

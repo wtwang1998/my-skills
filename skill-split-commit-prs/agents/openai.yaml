@@ -1,0 +1,4 @@
+interface:
+  display_name: "Split Commit PRs"
+  short_description: "Split one commit into clean PR branches"
+  default_prompt: "Use $split-commit-prs to split this commit into independently mergeable PR branches."

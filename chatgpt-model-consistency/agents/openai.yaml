@@ -1,0 +1,7 @@
+interface:
+  display_name: "ChatGPT Model Consistency"
+  short_description: "核对 ChatGPT 网页请求与服务端实际模型是否一致"
+  default_prompt: "使用 $chatgpt-model-consistency 检查当前 ChatGPT 网页请求模型与服务端返回模型是否一致。"
+
+policy:
+  allow_implicit_invocation: true
