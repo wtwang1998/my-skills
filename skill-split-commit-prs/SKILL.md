@@ -13,6 +13,7 @@ Use this skill when the user asks to decompose one existing Git commit into mult
 - Resolve the requested commit and a merge base before mutating Git state. Prefer the repository's requested target branch (`main` when stated, otherwise `main` or `master`). The safest automatic path is when the target commit's first parent is exactly that base. If it is not, inspect the ancestry and stop for direction rather than silently replaying a potentially stale full-file snapshot.
 - Do not rewrite, amend, reset, force-push, delete user branches, or push to a remote. Creating local branches and commits is authorized only when the user asked for this workflow.
 - Keep each changed path in exactly one output branch by default. If a single file contains unrelated hunks, either keep those changes together or explicitly explain the dependency and use a patch-based split; never copy a whole file into two branches.
+- Every output commit must be submitted with both a commit message and commit details at the same time. Both are required and must be written entirely in English; do not create or accept a commit with either field missing or written in another language.
 
 ## Workflow
 

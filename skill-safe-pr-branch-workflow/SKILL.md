@@ -27,6 +27,9 @@ Use this skill for implementation, bug fixes, refactors, tests, and documentatio
 5. Run proportionate validation: project tests, focused tests, static checks, and `git diff --check`. If a check cannot run, state the exact reason.
 6. Review the final diff for accidental files, secrets, generated artifacts, and unrelated changes.
 7. Create one Conventional Commit when validation passes. Use an imperative subject with an optional scope, for example `fix(web): prefer physical lan address over tun interface`.
+   - Include a meaningful commit body/details by default; do not use a subject-only commit for implementation, bug-fix, refactor, test, or documentation work.
+   - In the body, describe the concrete changes and affected behavior, the reason or user problem addressed, and the validation performed. Add compatibility impact, migration notes, or known limitations when relevant.
+   - Keep the subject concise and imperative, separate it from the body with a blank line, and use bullets when they make multiple changes or test results easier to scan.
 8. Report the branch, commit hash, changed behavior, validation results, and the next PR action. Leave the user on the task branch with a clean worktree unless the repository's workflow requires otherwise.
 
 ## Exceptions
@@ -42,6 +45,7 @@ Before handing off, confirm:
 
 - The task branch exists and has the `codex/` prefix unless the user chose another name.
 - The commit message follows Conventional Commits 1.0.0.
+- The commit includes a useful body/details section covering the change, rationale, and validation rather than only a subject line.
 - The diff contains only task-related changes.
 - Focused validation and `git diff --check` passed, or failures are explicitly reported.
 - No remote mutation was performed without explicit authorization.
