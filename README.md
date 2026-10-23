@@ -2,7 +2,7 @@
 
 这是我日常使用的 **Agent Skills 收藏清单**，包括个人编写的技能，以及日常使用或关注的其他技能。
 
-**收录不代表原创。** 本仓库只保存个人编写的 Skill 源文件；其他 Skill 仅记录已确认的上游链接或来源线索，不复制或维护其代码。安装和更新第三方 Skill 时，请以原项目的最新说明为准。
+**收录不代表原创。** 本仓库只保存个人编写的 Skill 源文件；其他 Skill 仅记录已确认的上游链接，不复制或维护其代码。安装和更新第三方 Skill 时，请以原项目的最新说明为准。
 
 ## 个人编写 · 本仓库维护
 
@@ -41,15 +41,6 @@
 ### Git 与交付
 
 - [`triage`](https://github.com/mattpocock/skills/tree/main/skills/engineering/triage)：按状态流转分类和核验 issue 或外部 PR，并整理 agent brief。
-
-### 来源待核实
-
-以下两个技能曾从本地导入，但未记录独立的上游仓库。由于 Skills Manager 备份历史已清理，为避免提供失效的历史快照链接或误认作者，暂只记录名称与用途，不保留源码或来源不明的链接。
-
-- `flet-headless-ui-verify`：通过模拟 Page 和控件树断言，在无窗口环境下验证 Flet 界面。
-- `pyside6-headless-ui-verify`：通过 offscreen Qt 探针验证 PySide6/PyQt 界面行为和布局。
-
-如果找到这两个技能的原始仓库，可补充上游链接。
 
 ## 安装与使用
 
