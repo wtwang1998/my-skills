@@ -1,0 +1,7 @@
+interface:
+  display_name: "周报生成"
+  short_description: "根据当周工时截图和模板整理、核对并生成 DOCX。"
+  default_prompt: "使用 $weekly-report 根据本周工时截图和周报模板生成周报。"
+
+policy:
+  allow_implicit_invocation: true
