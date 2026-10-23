@@ -47,4 +47,3 @@
 - **个人编写的 Skill**：打开本仓库对应目录，按其 `README.md` 或 `SKILL.md` 安装。使用 `weekly-report` 时，可以直接参考 [`weekly-report/README.md`](weekly-report/README.md) 中的安装及使用 Prompt。
 - **第三方 Skill**：前往上述原项目查看其安装说明。部分 Skill 有其他依赖，不能保证仅复制单个 `SKILL.md` 就可以正常运行。
 
-本仓库是**精选收藏与原创技能托管仓库**，不作为 Skills Manager 或其他工具的全量自动备份目的地。历史中的 Skills Manager 备份已清理，`.skills-manager/` 也被忽略，避免重新提交管理元数据或第三方 Skill 文件夹。
