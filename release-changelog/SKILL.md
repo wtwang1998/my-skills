@@ -34,12 +34,10 @@ Do not modify the repository, create tags, push, or open a Release unless the us
    - **测试与发布**: meaningful test coverage, packaging, or validation improvements.
    Keep internal refactors out of the main feature list unless they materially affect maintainability, extensibility, or reliability; summarize them briefly under improvements when useful.
 4. Write the release body in Chinese. Prefer concrete user-facing wording and group related changes into a few bullets. Do not list every commit, file, or internal helper. Do not claim behavior that is not supported by the inspected code or documentation.
-5. Return only the paste-ready Markdown body, optionally preceded by one short note if a ref or baseline had to be inferred. Use a version heading and include only non-empty sections:
+5. Return only the paste-ready Markdown body, optionally preceded by one short note if a ref or baseline had to be inferred. Use a version heading and include only non-empty sections. Do not place a general summary sentence or paragraph below the version heading; begin directly with the first non-empty section. Keep this rule for future changelogs unless the user explicitly asks for an overview:
 
    ```markdown
    ## 项目名 版本号
-
-   一句话概述本次版本的重点。
 
    ### ✨ 新增功能
 
@@ -64,6 +62,7 @@ Do not modify the repository, create tags, push, or open a Release unless the us
 
 ## Release-writing rules
 
+- Do not add a general summary sentence or paragraph between the title and the categorized release notes. Start directly with the first non-empty section unless the user explicitly asks for an overview.
 - Keep the output directly usable in GitHub's Markdown renderer; avoid raw command output, commit hashes, or a methodology dump unless they clarify the range or a baseline assumption.
 - Mention security, privacy, data-loss, authentication, migration, or platform caveats when the change affects them.
 - Mention optional integrations as optional and state their default behavior, especially for network or LLM features.
